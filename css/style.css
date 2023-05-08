@@ -213,6 +213,7 @@ CSS MAIN (INDEX) */
 .tittle {
     color: #003748;
     padding-bottom: 10px;
+    font-size: 25px;
     display: flex;
     justify-content: center;
 }
