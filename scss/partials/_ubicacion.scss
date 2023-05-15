@@ -1,0 +1,41 @@
+.main-ubi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: $colorSecundario;
+    font-size: 25px;
+}
+
+.section-ubi {
+    height: 600px;
+    display: flex;
+    justify-content: space-around;
+    background-image: url(../img/localubicacion.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    .ubi1 {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        width: 700px;
+
+        .cont-ubi {
+            text-align: center;
+            color: $colorSecundario;
+            background-color: #00000080;
+            border-radius: 10px;
+            font-size: 20px;
+        }
+    }
+}
+
+
+.uni-mapa, .soleil-mapa {
+    border: 2px solid $colorSecundario;
+    border-radius: 10px;
+    width: 100%;
+    height: 350px;
+}

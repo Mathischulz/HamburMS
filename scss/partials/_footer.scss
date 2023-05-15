@@ -1,0 +1,16 @@
+footer {
+    background-color: $colorSecundario;
+    display: flex;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: bold;
+    padding-block: 10px;
+}
+
+.footer-menu {
+    background-color: $colorPrincipal;
+}
+
+.footer-contacto {
+    margin-top: 10px;
+}

@@ -31,10 +31,12 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 0.5s;   
 }
 
 .logo:hover {
     color: #003748;
+    transform: scale(140%);  
 }
 
 .navbar {
@@ -80,7 +82,37 @@ CSS MAIN (INDEX) */
     text-transform: uppercase;
     padding-inline: 5px;
     border-radius: 10px;
+    -webkit-animation: scale-in-hor-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: scale-in-hor-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
+
+
+ @-webkit-keyframes scale-in-hor-center {
+    0% {
+      -webkit-transform: scaleX(0);
+              transform: scaleX(0);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scaleX(1);
+              transform: scaleX(1);
+      opacity: 1;
+    }
+  }
+  @keyframes scale-in-hor-center {
+    0% {
+      -webkit-transform: scaleX(0);
+              transform: scaleX(0);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scaleX(1);
+              transform: scaleX(1);
+      opacity: 1;
+    }
+  }
+  
+
 
 /*SECTION1*/
 
@@ -98,7 +130,11 @@ CSS MAIN (INDEX) */
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
+    transition: 0.5s;
+}
 
+.section1 a:hover {
+    transform: scale(105%);
 }
 
 .logohambur {

@@ -1,0 +1,76 @@
+.section-menu {
+    padding: 10px 30px 30px 30px;
+    background-color: $colorSecundario;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .tittle {
+        color: #003748;
+        padding-bottom: 10px;
+        font-size: 25px;
+        display: flex;
+            justify-content: center;
+    }
+
+    .nuestroscombos {
+        width: 1000px;
+        background-color: #003748;
+        border: 1px solid black;
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+
+        .cont-tit-txt-botn {
+            width: 100%;
+            height: 200px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+
+            .titulo-combos {
+                color: $colorSecundario;
+                font-size: 30px;
+                text-align: start;
+                text-transform: uppercase;
+            }
+
+            .texto-combos {
+                color: #c9f1fd;
+                font-size: 20px;
+                width: 650px;
+                text-align: justify;
+                text-transform: uppercase;
+                margin-bottom: 10px;
+            }
+
+            .boton-combos {
+                background-color:#c9f1fd;
+                border: none;
+                padding: 5px;
+                border-radius: 10px;
+            cursor: pointer;
+                font-weight: bold;
+                margin-bottom: 10px;
+
+                &:hover {
+                    color: $colorSecundario;
+                    background-color: $colorPrincipal;
+                }
+            }
+        }
+
+        .combo-imagenes {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+    }
+    
+}
+
+    

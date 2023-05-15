@@ -1,0 +1,115 @@
+.imagenprincipal {
+    background-image: url(../img/comboclasic.jpg);
+    height: 93vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        color: #c9f1fd;
+    background-color: #00000080;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-inline: 5px;
+    border-radius: 10px;
+    }
+}
+
+@-webkit-keyframes scale-in-hor-center {
+    0% {
+      -webkit-transform: scaleX(0);
+              transform: scaleX(0);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scaleX(1);
+              transform: scaleX(1);
+      opacity: 1;
+    }
+  }
+  @keyframes scale-in-hor-center {
+    0% {
+      -webkit-transform: scaleX(0);
+              transform: scaleX(0);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scaleX(1);
+              transform: scaleX(1);
+      opacity: 1;
+    }
+  }
+
+
+/*SECTION1*/
+
+.section1 {
+    background-color: $colorSecundario;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+
+    a {
+        color: #003748;
+        font-size: 40px;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-align: center;
+        transition: 0.5s;
+
+        &:hover {
+            transform: scale(105%);
+        }
+    }
+
+    .logohambur {
+        width: 200px;
+        padding: 20px;
+    }
+
+}
+
+
+/*SECTION2*/
+
+.section2 {
+    background-color: #003748;
+
+    .txt {
+        color: $colorSecundario;
+        font-size:60px;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-block: 15px;
+        text-align: center;
+    }
+
+    .div1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .col-1 {
+            width: auto;
+            color: $colorSecundario;
+            text-align: center;
+            padding-block: 10px;
+
+            h4 {
+                font-size: 20px;
+                text-transform: uppercase;
+            }
+        }
+
+        .col-2 {
+            border-radius: 10px;
+            border: 3px solid #c9f1fd;
+            width: 500px;
+        }
+    }
+}

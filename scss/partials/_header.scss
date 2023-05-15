@@ -1,0 +1,59 @@
+header {
+    background-color: $colorPrincipal;
+    padding-block: 10px;
+
+    .container {
+        display: flex;
+        justify-content: space-around;
+
+        .logo {
+            font-size: 25px;
+            color: $colorSecundario;
+            font-weight: 800;
+            text-transform: uppercase;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 0.5s;
+
+            &:hover {
+            color: #003748;
+            transform: scale(140%);
+            }
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+
+            .menu {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+
+                ul {
+                    li {
+                        a {
+                            color: $colorSecundario;
+                            font-size: 18px;
+                            font-weight: 600;
+                            text-align: center;
+
+                            &:hover {
+                                color: #003748;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+    
+
+@for $i from 1 through 4 {
+    
+    .menu-item#{$i} a {
+        width: 100px;
+    }
+}
