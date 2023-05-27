@@ -1,3 +1,25 @@
+.container-cont {
+    padding: 0;
+
+    .logo-contactos {
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.nav-contactos {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-contactos a {
+    text-decoration: none;
+}
+
 .main-contactos {
     height: 100px;
     display: flex;
@@ -5,6 +27,10 @@
     align-items: center;
     text-align: center;
     color: $colorSecundario;
+
+    h2 {
+        font-weight: bold;
+    }
 }
 
 .contenedor-cont {
@@ -28,17 +54,22 @@
         align-content: center;
         flex-direction: column;
 
+
         .redes {
-            width: 400px;
+            width: 100%;
             display: flex;
             justify-content: space-around;
+            margin-block: 5px;
         }
     }
 }
 
-.contacto, .contacto2 h3 {
+.contacto h3, .contacto2 h3 {
     font-size: 25px;
     color: #003748;
+    text-align: center;
+    padding-inline: 5px;
+    font-weight: bold;
 }
 
 .icon {
@@ -46,7 +77,8 @@
 }
 
 .carousel {
-    width: 600px;
+    width: 500px;
+    padding-inline: 20px;
     margin: auto;
     background-size: cover;
     margin-bottom: 10px;
@@ -58,23 +90,32 @@
 }
 
 
-.cont-form {
-    width: 400px;
-    padding-block: 10px;
-    margin: auto;
+.contenedor-form {
     display: flex;
-    align-items: center;
-    flex-direction: column;
-    background-color: $colorSecundario;
-    border-radius: 10px;
-
-    .mb-3 {
-        width:300px;
-
-        h2 {
+    justify-content: center;
+    
+    .cont-form {
+        width: 400px;
+        padding-block: 10px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-color: $colorSecundario;
+        border-radius: 10px;
+    
+        .mb-3 h2 {
+            width:100%;
+            padding-inline: 10px;
             display: flex;
+            align-items: center;
             text-align: center;
         }
+
+        .mail, .txt-mail {
+            padding-inline: 5px;
+        }
+    
     }
 
 }
+

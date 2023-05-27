@@ -6,10 +6,14 @@
         align-items: center;
         flex-direction: column;
 
-        ul {
-            li {
-                a {
-                    padding-inline: 5px;
+        .menu {
+            flex-direction: column;
+
+            ul {
+                li {
+                    a {
+                        padding-inline: 5px;
+                    }
                 }
             }
         }
@@ -37,14 +41,6 @@
     .col-2 {
         width: 400px;
     }
-    
-    
-    /*MEDIA NOSOTROS.HTML*/
-    
-    .txt-nos {
-        width: 400px;
-        font-size: 25px;
-    }
 
     /*MEDIA UBICACION.HTML*/
 
@@ -53,9 +49,6 @@
         h2 {
             font-size: 30px;
         }
-    }
-    
-    .main-ubi {
 
         h3 {
             font-size: 25px;
@@ -66,13 +59,31 @@
         width: 200px;
     }
 
+    /*MEDIA CONTACTOS*/
+
+    
+    .carousel, .contenedor-form {
+        width: 90%;
+        margin-inline: 1.5rem;
+    }
 }
 
 /*MEDIAQUERIES COMBOS.HTML*/
 @media screen and (max-width: 680px) {
     .nuestroscombos {
-        width: 500px;
+        flex-direction: column;
+    }
+    
+    
+}
+
+/*MEDIA CONTACTOS*/ 
+@media screen and (max-width: 900px) {
+    .contenedor-cont {
+        flex-direction: column;
     }
 
-    
+    .ubi1 {
+        width: 300px;
+    }
 }

@@ -72,16 +72,19 @@ CSS MAIN (INDEX) */
     background-position: center;
     display: flex;
     justify-content: center;
-    align-items: center
+    align-items: center;
+    padding-inline: 1.5rem;
 }
 
 .imagenprincipal h1 {
     color: #c9f1fd;
     background-color: #00000080;
     font-weight: bold;
+    text-align: center;
     text-transform: uppercase;
     padding-inline: 5px;
     border-radius: 10px;
+    
     -webkit-animation: scale-in-hor-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 	        animation: scale-in-hor-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
@@ -131,6 +134,7 @@ CSS MAIN (INDEX) */
     text-transform: uppercase;
     text-align: center;
     transition: 0.5s;
+    padding-inline: 1.5rem;
 }
 
 .section1 a:hover {
@@ -156,6 +160,7 @@ CSS MAIN (INDEX) */
     justify-content: center;
     align-items: center;
     padding-block: 15px;
+    padding-inline: 1.5rem;
     text-align: center;
 }
 
@@ -164,6 +169,7 @@ CSS MAIN (INDEX) */
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    
 }
 
 .col-1 {
@@ -181,7 +187,7 @@ CSS MAIN (INDEX) */
 .col-2 {
     border-radius: 10px;
     border: 3px solid #c9f1fd;
-    width: 500px;
+    width:  400px;
 }
 
 
@@ -225,12 +231,13 @@ CSS MAIN (INDEX) */
 }
 
 .txt-nos {
-    width: 700px;
-    font-size: 40px;
+    width: 50%;
+    font-size: 30px;
     text-align: center;
     color: #91e4fb;
     background-color: #00000080;
     border-radius: 10px;
+    margin-inline: 1.5rem;
 }
 
 
@@ -255,9 +262,8 @@ CSS MAIN (INDEX) */
 }
 
 .nuestroscombos {
-    width: 1000px;
     background-color: #003748;
-    border: 1px solid black;
+    width: 70%;
     border-radius: 15px;
     display: flex;
     align-items: center;
@@ -266,7 +272,6 @@ CSS MAIN (INDEX) */
 
 .cont-tit-txt-botn {
     width: 100%;
-    height: 200px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -290,10 +295,11 @@ CSS MAIN (INDEX) */
 
 .texto-combos {
     color: #c9f1fd;
+    padding-inline: 10px;
     font-size: 20px;
-    width: 650px;
     text-align: justify;
     text-transform: uppercase;
+    text-align: center;
 }
 
 .boton-combos {
@@ -321,6 +327,7 @@ CSS MAIN (INDEX) */
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     flex-direction: column;
     color: #91e4fb;
     font-size: 25px;
@@ -340,10 +347,12 @@ CSS MAIN (INDEX) */
     display: flex;
     justify-content: space-around;
     flex-direction: column;
-    width: 700px;
+    width: 500px;
+    margin-inline: 10px;
 }
 
 .cont-ubi {
+    width: 100%;
     text-align: center;
     color: #91e4fb;
     background-color: #00000080;
@@ -360,6 +369,16 @@ CSS MAIN (INDEX) */
 
 
 /*CSS CONTACTOS.HTML*/
+
+.logo-contactos {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-contactos a {
+    text-decoration: none;
+}
 
 .main-contactos {
     height: 100px;
@@ -386,11 +405,6 @@ CSS MAIN (INDEX) */
     flex-direction: column;
 }
 
-.contacto, .contacto2 h3 {
-    font-size: 25px;
-    color: #003748;
-}
-
 .contacto2 {
     display: flex;
     align-items: center;
@@ -398,19 +412,27 @@ CSS MAIN (INDEX) */
     flex-direction: column;
 }
 
+.contacto h3, .contacto2 h3 {
+    font-size: 25px;
+    color: #003748;
+    text-align: center;
+    padding-inline: 5px;
+}
+
+
 .icon {
     width: 80px;
 }
 
 .redes {
-    width: 400px;
+    width: 100%;
     display: flex;
     justify-content: space-around;
 }
 
-
 .carousel {
-    width: 600px;
+    width: 500px;
+    padding-inline: 20px;
     margin: auto;
     background-size: cover;
     margin-bottom: 10px;
@@ -421,11 +443,15 @@ CSS MAIN (INDEX) */
     border: 2px solid #91e4fb;
 }
 
+.contenedor-form {
+    display: flex;
+    justify-content: center;
+    padding-inline: 1.5rem;
+}
 
 .cont-form {
     width: 400px;
     padding-block: 10px;
-    margin: auto;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -435,7 +461,9 @@ CSS MAIN (INDEX) */
 }
 
 .mb-3 {
-    width: 300px;
+    width: 100%;
+    padding-inline: 10px;
+
 }
 
 .mb-3 h2 {
@@ -472,6 +500,10 @@ footer {
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-direction: column;
+    }
+
+    .menu {
         flex-direction: column;
     }
 
@@ -522,14 +554,30 @@ footer {
         width: 200px;
     }
 
-}
+    
+    /*MEDIA CONTACTOS CAROUSEL*/
 
-/*MEDIAQUERIES COMBOS.HTML*/
-@media screen and (max-width: 680px) {
-    .nuestroscombos {
-        width: 500px;
+    .carousel {
+        width: 100%;
     }
 
     
 }
 
+/*MEDIAQUERIES COMBOS.HTML*/
+@media screen and (max-width: 680px) {
+    .nuestroscombos {
+        flex-direction: column;
+    }    
+}
+
+/*MEDIA CONTACTOS*/ 
+@media screen and (max-width: 900px) {
+    .contenedor-cont {
+        flex-direction: column;
+    }
+
+    .ubi1 {
+        width: 300px;
+    }
+}

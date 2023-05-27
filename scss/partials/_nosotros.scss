@@ -1,3 +1,15 @@
+.navbar a {
+    width: 100px;
+    color: $colorSecundario;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+
+    &:hover {
+        color: #003748;
+    }
+}
+
 .grid-nos {
     width: 100%;
     display: grid;
@@ -13,12 +25,13 @@
         background-position: center center;
 
         .txt-nos {
-            width: 700px;
-            font-size: 40px;
+            font-size: 30px;
             text-align: center;
             color: $colorSecundario;
             background-color: #00000080;
             border-radius: 10px;
+            margin-inline: 1.5rem;
+            padding-inline: 10px;
         }
     }
 
